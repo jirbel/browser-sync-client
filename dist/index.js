@@ -255,7 +255,8 @@ utils.setScroll = function (pos) {
  * Hard reload
  */
 utils.reloadBrowser = function () {
-    utils.getWindow().location.reload(true);
+    var iframe = document.getElementById('mainProject');
+    iframe.src = iframe.src;
 };
 
 /**
